@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const adminsRouter = require("./Routes/admins");
-const usersRouter = require("./Routes/users");
 
 // Initializing express application
 const app = express();
@@ -23,8 +22,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors({ origin: true, credentials: true }));
 
-app.use('/',usersRouter)
-app.use('/admin',adminsRouter);
+app.use('/',adminsRouter);
 
 
 const port = process.env.PORT;
