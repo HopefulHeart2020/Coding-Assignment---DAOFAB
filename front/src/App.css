@@ -32,8 +32,31 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #209b9b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #209b9b;
+  animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #209b9b;
+  }
+  50% {
+    box-shadow: 0 0 20px #209b9b, 0 0 40px #209b9b;
+  }
+  100% {
+    box-shadow: 0 0 10px #209b9b;
   }
 }

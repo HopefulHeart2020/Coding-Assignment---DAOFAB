@@ -1,9 +1,9 @@
 import React from 'react'
-import {HomeCTR} from '../Containers'
+import { HomeCTR } from '../Containers'
 function Home() {
   return (
     <div>
-      <HomeCTR/>
+      <HomeCTR />
     </div>
   )
 }

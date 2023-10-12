@@ -1,10 +1,11 @@
 import React from 'react'
-import { Banner } from '../../Components'
-
+import { Banner } from '../../Components';
+import ParentTable from '../../Components/ParentTable';
 function HomeCTR() {
   return (
     <div>
-      <Banner/>
+      {/* <Banner/> */}
+      <ParentTable/>
     </div>
   )
 }
